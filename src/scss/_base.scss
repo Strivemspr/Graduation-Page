@@ -9,24 +9,25 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%; convert back -> 0.625 * 16 = 10 
+    // scroll-behavior: smooth;
   
-    // @media only screen and (max-width: $bp-medium) {
-    //   font-size: 50%;
-    // }
+    @media only screen and (max-width: $large) {
+      font-size: 60%;
+    }
 }
 
 body {
     @include mixins.custom-scrollbar;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Limelight', cursive;
     font-size: 1.6rem;
+    background-color: #232323;
 
-    // Delete Styles --------------------
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
-  
+
+.active {
+    overflow: hidden;
+    background-color: red;
+}
 ol, ul {
     list-style: none;
 }

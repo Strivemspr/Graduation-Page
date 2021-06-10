@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- +639516344712 -->
+    <!-- +639516344712 -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpack Template</title>
 </head>
+
 <body class="preload">
-    <div>
-        <h1>Simple Javascript + Sass Webpack Template</h1>
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+                <h1 class="banner">Congratulations Layna!</h1>
+                <div class="icon-container">
+                    <a class="scrollTo" data-scrollTo="portfolio" href="#gallery"><i class="fas fa-caret-down fa-3x"></i></a>
+                </div> 
+            </div>
+        </div>
+        <video autoplay="true" loop="true" muted>
+            <source src="./video/congratulations.mp4" type="video/mp4" />
+        </video>
     </div>
+
+    <div class="gallery" id="gallery">
+
+        <h1>Gallery</h1>
+
+        <!-- <a class="image-container" href="./images/image-01.jpg" data-lightbox="gallery">
+            <img src="./images/image-02.jpg" alt="Image">
+            <i class="fas image-icon fa-search-plus"></i>
+        </a>
+
+        <a class="image-container" href="./images/image-02.jpg" data-lightbox="gallery">
+            <img src="./images/image-02.jpg" alt="Image">
+            <i class="fas image-icon fa-search-plus"></i>
+        </a> -->
+        
+    </div>
+    
+    <div class="load-more-button">
+        <a href="#">Load More</a>
+    </div>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/layna_a04/">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.facebook.com/layna.aukuso">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>
